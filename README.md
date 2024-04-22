@@ -1,10 +1,9 @@
 <img src="https://www.crim.ca/wp-content/uploads/2020/10/logo-color-300x61.png" alt="CRIM"/>
 
----
-Computer Research Institute of Montréal / Centre de recherche informatique de Montréal
----
-
 ## Information
+
+Computer Research Institute of Montréal <br>
+Centre de recherche informatique de Montréal
 
 <table>
     <tr>
