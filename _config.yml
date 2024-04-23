@@ -1,0 +1,12 @@
+exclude:
+  - LICENSE
+
+defaults:
+  - scope:
+      path: "**/index.md"
+    values:
+      layout: "listing"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
