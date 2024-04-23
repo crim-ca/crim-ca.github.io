@@ -1,9 +1,10 @@
 ---
 layout: page
-title: STAC Extensions under CRIM repositories
+title: STAC schemas under CRIM repositories
 ---
 
 <!-- fixme: automate -->
+
 | Extension                                  | Description                           |
 |--------------------------------------------|---------------------------------------|
 | <a href="/dlm-extension">dlm-extension</a> | Deep Learning Model STAC Extension    |
