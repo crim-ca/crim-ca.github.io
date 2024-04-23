@@ -3,5 +3,8 @@ layout: page
 title: STAC Extensions under CRIM repositories
 ---
 
-<div id="pages"></div>
-<script async type="text/javascript" src="/js/stac-listing.js"></script>
+<!-- fixme: automate -->
+| Extension                                  | Description                           |
+|--------------------------------------------|---------------------------------------|
+| <a href="/dlm-extension">dlm-extension</a> | Deep Learning Model STAC Extension    |
+| <a href="/mlm-extension">mlm-extension</a> | Machine Learning Model STAC Extension |
