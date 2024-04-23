@@ -1,0 +1,61 @@
+
+<dl>
+
+    {% comment %}
+        Explicit listing of page references to include.
+
+        These should point at an existing documentation nested under `crim-ca` organization,
+        and published using the `gh-pages` branch of the corresponding repository.
+
+        Alternatively, it can be used to refer to an external documentation to provide a shortcut.
+    {% endcomment %}
+
+    <dt><a href="/geoimagenet/">GeoImageNet</a></dt>
+    <dd>
+        GeoImageNet is a collaborative research and annotation platform for researchers from different backgrounds
+        who wish to develop innovative algorithms for the exploitation of very high resolution (VHR) satellite images
+        for various applications.
+    </dd>
+
+    <dt><a href="https://pavics-weaver.readthedocs.io/">Weaver</a></dt>
+    <dd>
+        Weaver is an OGC-API flavored <i>Execution Management Service</i>&nbsp(EMS) that allows the execution of
+        workflows chaining various applications and <i>Web Processing Services</i>&nbsp(WPS) inputs and outputs.
+        Remote execution is deferred by the EMS to one or
+        many <i>Application, Deployment and Execution Service</i>&nbsp(ADES) or remote service providers,
+        and employs <i><a href="https://www.commonwl.org/">Common Workflow Language</a></i>&nbsp(CWL) configurations
+        to define an <i><a href="https://github.com/opengeospatial/ogcapi-processes/blob/master/openapi/schemas/processes-dru/ogcapppkg.yaml">OGC Application Package</a></i>
+        deployed for each process.
+    </dd>
+
+
+    {% comment %}
+        List directories which are in the current directory with a 'index' page.
+    {% endcomment %}
+
+    {% for item in site.pages %}
+        {% assign item_crumbs = item.url | remove_first: page.dir | split: '/' %}
+
+        {% if item_crumbs.size == 1 and item.name == 'index.md' %}
+            <dt><a href="{{ item.url | relative_url }}">{{ item.title }}</a></dt>
+            {% if item.description %}
+            <dd>{{ item.description }}</dd>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+
+    {% comment %}
+        List pages in same directory as the current page, excluding the page itself.
+    {% endcomment %}
+
+    {% for item in site.pages %}
+        {% if item.dir == page.dir and item.path != page.path %}
+            <dt><a href="{{ item.url | relative_url }}">{{ item.title }}</a></dt>
+            {% if item.description %}
+            <dd>{{ item.description }}</dd>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+</dl>

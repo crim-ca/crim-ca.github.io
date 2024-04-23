@@ -1,6 +1,7 @@
 ---
 layout: page
-title: STAC schemas under CRIM repositories
+title: STAC
+description: STAC schemas under CRIM repositories
 ---
 
 <!-- fixme: automate -->
