@@ -1,3 +1,8 @@
+---
+title: Home
+layout: home
+---
+
 <img src="https://www.crim.ca/wp-content/uploads/2020/10/logo-color-300x61.png" alt="CRIM"/>
 
 ## Information
@@ -19,8 +24,3 @@ Centre de recherche informatique de Montréal
         <td><a href="tel:+15148401234">+1 (514) 840-1234</a></td>
     </tr>
 </table>
-
-## Pages
-
-<div id="pages"></div>
-<script async type="text/javascript" src="/js/repo-listing.js"></script>
