@@ -1,4 +1,4 @@
-{% if site.pages %}
+{% if len([item for item in site.pages if item.name not in ['index.md', 'index.html', 'README.md']) %}
 <h2>Pages</h2>
 {% endif %}
 
