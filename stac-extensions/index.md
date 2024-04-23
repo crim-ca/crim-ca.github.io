@@ -1,7 +1,7 @@
 ---
+layout: page
 title: STAC Extensions under CRIM repositories
 ---
 
-# STAC Extensions under CRIM repositories
-
-{% include list-pages.html %}
+<script type="text/javascript" src="/js/stac-listing.js"></script>
+<div id="pages"></div>

@@ -22,4 +22,5 @@ Centre de recherche informatique de Montréal
 
 ## Pages
 
-<!-- to be filled by layout -->
+<script type="text/javascript" src="/js/repo-listing.js"></script>
+<div id="pages"></div>
