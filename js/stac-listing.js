@@ -11,5 +11,5 @@
     htmlString += `<li><a href="${p.name}">${p.name}</a> - <i>${p.description}</i></li>`;
   }
   htmlString += '</ol>';
-  document.getElementById('pages')[0].innerHTML = htmlString;
+  document.getElementById('pages').innerHTML = htmlString;
 })()
