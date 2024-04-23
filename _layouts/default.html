@@ -32,6 +32,14 @@
 
     <hr>
 
+    {% if page.description %}
+    <div id="description" style="font-style: italic">
+       {{ page.description }}
+    </div>
+    <hr>
+    {% endif %}
+
+
     {{ content }}
 
     <footer>

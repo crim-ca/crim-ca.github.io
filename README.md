@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 <img src="https://www.crim.ca/wp-content/uploads/2020/10/logo-color-300x61.png" alt="CRIM"/>
 
 ## Information
