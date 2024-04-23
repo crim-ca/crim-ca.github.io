@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    <style>
+        body {
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>{{ site.title | upcase }}</p>
+
+    <h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1>
+
+    {% include breadcrumbs.html %}
+
+    <hr>
+
+    {{ content }}
+
+    <footer>
+
+        {{ 'Github Organization: [crim-ca](https://github.com/crim-ca)' | markdownify }}
+
+    </footer>
+
+</body>
+
+</html>

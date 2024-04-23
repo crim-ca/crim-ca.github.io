@@ -21,3 +21,5 @@ Centre de recherche informatique de Montréal
 </table>
 
 ## Pages
+
+<!-- to be filled by layout -->
